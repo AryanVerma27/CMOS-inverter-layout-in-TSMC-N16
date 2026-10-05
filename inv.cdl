@@ -1,0 +1,8 @@
+* inv - CMOS inverter (TSMC N16 FinFET, svt devices)
+* Exported from Cadence Virtuoso (auCdl). PDK include path removed.
+
+.SUBCKT inv GND IN OUT VDD
+*.PININFO IN:I OUT:O GND:B VDD:B
+MM0 OUT IN GND GND nch_svt_mac l=16.0n nfin=4 m=1
+MM1 OUT IN VDD VDD pch_svt_mac l=16.0n nfin=4 m=1
+.ENDS
